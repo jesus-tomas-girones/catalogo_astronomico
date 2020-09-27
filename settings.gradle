@@ -1,0 +1,3 @@
+include ':catalogo'
+include ':app'
+rootProject.name = "Catalogo Astronómico"
