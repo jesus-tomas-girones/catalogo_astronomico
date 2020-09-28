@@ -29,7 +29,7 @@ public int masDistante(Astro otro) {...}
 Requiere un parámetro del tipo `Astro` denominado otro. Devuelve un valor entero que será 1 si nuestro astro es más brillante que otro, -1 si nuestro astro es menos brillante y 0 si ambos astros son igual de brillantes.
 
 ```java 
-public int visibleCon() {...}
+public String visibleCon() {...}
 ```
 
 Devuelve un `String` que describa la forma en la que el astro puede ser observado. Dicho string será:
