@@ -122,7 +122,7 @@ objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0
 
 2. Para verificar que la clase cumple los requisitos del ejercicio, utiliza los test definidos en `CatalogoAstronomicoTest`.
 
-##Ejercicio 4
+## Ejercicio 4
 Implementar la clase `TipoEstrella`  como un enumerado que contenga los siguientes tipos:
   
 * ENANA_AMARILLA("Enana Amarilla", "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal")
