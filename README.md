@@ -65,13 +65,13 @@ Para comprobar si dos objetos `Astro` son iguales. Dos astros son iguales si tod
 1. Completa la implementación de los siguientes tres descendientes de `Astro`:
 * `Planeta`, con los atributos adicionales:
 
-```javascript
+```javas
 Estrella sistema_solar;
 boolean habitado;
 ```
 * `Estrella`, con los atributos adicionales:
 
-```javascript
+```java
 int planetas;
 Galaxia galaxia;
 ```
@@ -90,12 +90,13 @@ objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0
 
 ## Ejercicio 3 “Clase CatalogoAstronomico”
 1. Implementa la clase `CatalogoAstronomico` que debe tener los siguientes atributos:
-
+```java
 *	Un ArrayList catalogo, que es una lista de los astros del catálogo.
 *	Un HashSet galaxias, que es un conjunto de String con los nombres de las galaxias a las que pertenecen los astros del catálogo. Cuando se añade una galaxia al catálogo, también se de incluir en este conjunto. 
 *	Un número entero numAstrosSimpleVista, que representa el número de astros a simple vista que contiene el catálogo (ver clase Astro).
-
+```
 La case CatalogoAstronomico debe implementar un interface llamado Astros que contiene los métodos que se indican a continuación.
+```java
 *	boolean esEstrellaSimpleVista(int i); //Devuelve true si el Astro en una posición válida del catálogo es una estrella visible a simple vista
 *	boolean anade(Astro a); //Añade un astro al catálogo y devuelve true si se ha podido añadir. Si el nombre ya existe no será añadido.
 *	void borrar(String nombre); //Elimina el astro con el nombre indicado. 
@@ -103,9 +104,12 @@ La case CatalogoAstronomico debe implementar un interface llamado Astros que con
 *	Astro primeroMasBrillanteQue(Astro a); // Devuelve el primer Astro del catálogo que es más brillante en magnitud absoluta que un Astro dado (lo de primero puede tener varias interpretaciones)
 *	List<Astro> filtraAstrosSimpleVista(); //Devuelve un array de objetos Astro con las estrellas visibles a simple vista que contiene el catálogo (creo que se van a liar menos si usan una lista)
 *	Astro masBrillante (); //Devuelve el Astro que es más brillante en magnitud absoluta de todos los del catálogo
+```
 
 Además, debe incluir un método toString() que devuelva un string que muestre la lista de astros que contiene separados por ; Por ejemplo:
-*	objeto-Astro {nombre: tierra, tipo: PLANETA, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}; objeto-Astro {nombre: Sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}; objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0 }
+```javascript
+objeto-Astro {nombre: tierra, tipo: PLANETA, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}; objeto-Astro {nombre: Sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}; objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0 }
+```
 
 2. Para verificar que la clase cumple los requisitos del ejercicio, utiliza los test definidos en `CatalogoAstronomicoTest`.
 
