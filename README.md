@@ -129,6 +129,8 @@ Implementa los métodos getters y setters y el método toString() para que muest
 objeto-Astro {nombre: sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: vialactea, info: Enana Amarilla "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal"}
 ```
 
+Para verificar que la clase cumple los requisitos del ejercicio, utiliza los test definidos en `EstrellaConTipoTest`.
+
 ## Entrega de la práctica
 
 * Selecciona la opción de Android Studio:
