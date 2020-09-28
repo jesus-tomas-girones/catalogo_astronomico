@@ -66,7 +66,7 @@ Para comprobar si dos objetos `Astro` son iguales. Dos astros son iguales si tod
 * `Planeta`, con los atributos adicionales:
 
 ```javas
-Estrella sistema_solar;
+Estrella estrella;
 boolean habitado;
 ```
 * `Estrella`, con los atributos adicionales:
