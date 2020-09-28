@@ -48,7 +48,7 @@ public class EstrellaTest {
    public void toString_esCorrecto() {
       Galaxia g = new Galaxia("Vía Láctea", 0, 45);
       Estrella a = new Estrella("Alfa Centauri", -0.27, 4.5, 3, g);
-      assertEquals("objeto-Astro {nombre: Alfa Centauri, brillo: -0.27, distancia: 4.5, planetas: 3, galaxia: Vía Láctea}", a.toString());
+      assertEquals("objeto-Astro {nombre: Alfa Centauri, tipo: Estrella, brillo: -0.27, distancia: 4.5, planetas: 3, galaxia: Vía Láctea}", a.toString());
    }
 //*/
 }
