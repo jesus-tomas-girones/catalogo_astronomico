@@ -1,9 +1,5 @@
 # Práctica: Catálogo Astronómico
 
-La tarea consiste en implementar la clase ´CatalogoAstronomico`  que, como su nombre indica, representa un catálogo de astros.
-
-Para ello debemos implementar el código Java necesario para resolver los siguientes ejercicios:
-
 ## Pasos previos:
 
 * Abre Android Studio
@@ -14,7 +10,7 @@ https://github.com/jesus-tomas-girones/catalogo_astronomico.git y haz click en e
 
 ## Ejercicio 1 “Clase Astro” 
 1. Abre la clase `Astro` e impleméntala con los siguientes requisitos:
-* Atributos: nombre (`String`), brillo observado desde la Tierra (`double`) y distancia en años luz desde la Tierra (`double`).
+* Atributos: nombre (`String`), tipo (`String`), brillo observado desde la Tierra (`double`) y distancia en años luz desde la Tierra (`double`).
 * Añade los getters y setters para estos atributos. 
 * Constructores:
  Un constructor general con los parámetros apropiados para inicializar todos los atributos de objeto, en el mismo orden que han sido descritos en el punto anterior. 
@@ -27,13 +23,13 @@ Devuelve true o false, en función de si nuestro astro está mas distante que el
 
 
 ```java 
-public int masBrillante(Astro otro) {...}
+public int masDistante(Astro otro) {...}
 ```
       
 Requiere un parámetro del tipo `Astro` denominado otro. Devuelve un valor entero que será 1 si nuestro astro es más brillante que otro, -1 si nuestro astro es menos brillante y 0 si ambos astros son igual de brillantes.
 
 ```java 
-public String visibleCon() {...}
+public int visibleCon() {...}
 ```
 
 Devuelve un `String` que describa la forma en la que el astro puede ser observado. Dicho string será:
@@ -68,11 +64,13 @@ Para comprobar si dos objetos `Astro` son iguales. Dos astros son iguales si tod
 
 1. Completa la implementación de los siguientes tres descendientes de `Astro`:
 * `Planeta`, con los atributos adicionales:
+
 ```javascript
 Estrella sistema_solar;
 boolean habitado;
 ```
 * `Estrella`, con los atributos adicionales:
+
 ```javascript
 int planetas;
 Galaxia galaxia;
@@ -93,48 +91,23 @@ objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0
 ## Ejercicio 3 “Clase CatalogoAstronomico”
 1. Implementa la clase `CatalogoAstronomico` que debe tener los siguientes atributos:
 
+*	Un ArrayList catalogo, que es una lista de los astros del catálogo.
+*	Un HashSet galaxias, que es un conjunto de String con los nombres de las galaxias a las que pertenecen los astros del catálogo. Cuando se añade una galaxia al catálogo, también se de incluir en este conjunto. 
+*	Un número entero numAstrosSimpleVista, que representa el número de astros a simple vista que contiene el catálogo (ver clase Astro).
 
-*   Un `ArrayList catalogo`, que es una lista de los astros del catálogo.
-*	Un `HashSet galaxias`, que es un conjunto de `String` con los nombres de las galaxias a las que pertenecen los astros del catálogo. Cuando se añade una galaxia al catálogo, también se de incluir en este conjunto. 
-*	Un número entero `numAstrosSimpleVista`, que representa el número de astros a simple vista que contiene el catálogo (ver clase Astro).
+La case CatalogoAstronomico debe implementar un interface llamado Astros que contiene los métodos que se indican a continuación.
+*	boolean esEstrellaSimpleVista(int i); //Devuelve true si el Astro en una posición válida del catálogo es una estrella visible a simple vista
+*	boolean anade(Astro a); //Añade un astro al catálogo y devuelve true si se ha podido añadir. Si el nombre ya existe no será añadido.
+*	void borrar(String nombre); //Elimina el astro con el nombre indicado. 
+*	Astro buscaAstro(String nombre); //Busca un astro por su nombre
+*	Astro primeroMasBrillanteQue(Astro a); // Devuelve el primer Astro del catálogo que es más brillante en magnitud absoluta que un Astro dado (lo de primero puede tener varias interpretaciones)
+*	List<Astro> filtraAstrosSimpleVista(); //Devuelve un array de objetos Astro con las estrellas visibles a simple vista que contiene el catálogo (creo que se van a liar menos si usan una lista)
+*	Astro masBrillante (); //Devuelve el Astro que es más brillante en magnitud absoluta de todos los del catálogo
 
-NOTA: estos atributos no deben tener `getters`, pero no `setters`.
-
-La case `CatalogoAstronomico` debe implementar los métodos que se indican a continuación.:
-
-```javascript
-boolean esEstrellaSimpleVista(int i); //Devuelve true si el Astro en una posición válida del catálogo es una estrella visible a simple vista
-boolean anade(Astro a); //Añade un astro al catálogo y devuelve true si se ha podido añadir. Si el nombre ya existe no será añadido.
-void borrar(String nombre); //Elimina el astro con el nombre indicado. 
-Astro buscaAstro(String nombre); //Busca un astro por su nombre
-Astro primeroMasBrillanteQue(Astro a); // Devuelve el primer Astro del catálogo que es más brillante en magnitud absoluta que un Astro dado (lo de primero puede tener varias interpretaciones)
-Astro[]List<Astro> filtraAstrosSimpleVista(); //Devuelve un array de objetos Astro con las estrellas visibles a simple vista que contiene el catálogo (creo que se van a liar menos si usan una lista)
-Astro masBrillante (); //Devuelve el Astro que es más brillante en magnitud absoluta de todos los del catálogo
-```
-
-Además, debe incluir un método `toString()` que devuelva un string que muestre la lista de astros que contiene separados por ; Por ejemplo:
-
-```javascript
-objeto-Astro {nombre: tierra, tipo: PLANETA, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}; 
-objeto-Astro {nombre: Sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}; 
-objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0 }
-```
+Además, debe incluir un método toString() que devuelva un string que muestre la lista de astros que contiene separados por ; Por ejemplo:
+*	objeto-Astro {nombre: tierra, tipo: PLANETA, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}; objeto-Astro {nombre: Sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}; objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0 }
 
 2. Para verificar que la clase cumple los requisitos del ejercicio, utiliza los test definidos en `CatalogoAstronomicoTest`.
-
-## Ejercicio 4
-Implementar la clase `TipoEstrella`  como un enumerado que contenga los siguientes tipos:
-  
-* ENANA_AMARILLA("Enana Amarilla", "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal")
-* ENANA_BLANCA("Enana Blanca", "https://es.wikipedia.org/wiki/Enana_blanca")
-* GIGANTE_ROJA("Gigante Roja", "https://es.wikipedia.org/wiki/Gigante_roja")
-* SUBGIGANTE_BLANCO("Subgigante Blanco", "https://es.wikipedia.org/wiki/Subgigante")
-  
-Añade esta clase como un nuevo atributo tipo a la clase Estrella y modifica su método toString() para que muestre los datos como en este ejemplo:
-
-```javascript
-objeto-Astro {nombre: sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: vialactea, info: Enana Amarilla "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal"}
-```
 
 ## Entrega de la práctica
 
