@@ -1,8 +1,7 @@
-package com.example.catalogoastronomico;
-/**
+package com.example.catalogoastronomico;/**
  *
- * @author (iip)
- * @version (2019)
+ * @author (IOT)
+ * @version (2020)
  *
  */
 public class Estrella extends Astro{

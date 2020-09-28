@@ -1,8 +1,8 @@
 package com.example.catalogoastronomico;
 /**
  *
- * @author (iip)
- * @version (2019)
+ * @author (IOT)
+ * @version (2020)
  *
  */
 class Principal {
