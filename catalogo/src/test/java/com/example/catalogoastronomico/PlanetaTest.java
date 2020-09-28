@@ -48,7 +48,7 @@ public class PlanetaTest {
    public void toString_esCorrecto() {
       Estrella e = new Estrella("Alfa Centauri", -0.27, 4.5, 3, null);
       Planeta a = new Planeta("nombre", 1.1, 2.2 , false, e);
-      assertEquals("objeto-Astro {nombre: nombre, brillo: 1.1, distancia: 2.2, habitado: false, estrella: Alfa Centauri}", a.toString());
+      assertEquals("objeto-Astro {nombre: nombre, tipo: Planeta, brillo: 1.1, distancia: 2.2, habitado: false, estrella: Alfa Centauri}", a.toString());
    }
 //*/
 }
