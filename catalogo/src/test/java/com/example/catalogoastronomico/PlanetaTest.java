@@ -15,7 +15,7 @@ public class PlanetaTest {
       assertEquals(1.1, a.getBrillo(), 1E-10);
       assertEquals(2.2, a.getDistancia(), 1E-10);
       assertEquals(false, a.isHabitado());
-      assertEquals(e, a.getSistemaSolar());
+      assertEquals(e, a.getEstrella());
    }
 
    @Test
@@ -26,12 +26,12 @@ public class PlanetaTest {
       a.setBrillo(-2.6);
       a.setDistancia(4.5);
       a.setHabitado(true);
-      a.setSistemaSolar(e);
+      a.setEstrella(e);
       assertEquals("nuevo", a.getNombre() );
       assertEquals(-2.6, a.getBrillo(), 1E-10);
       assertEquals(4.5, a.getDistancia(), 1E-10);
       assertEquals(true, a.isHabitado());
-      assertEquals(e, a.getSistemaSolar());
+      assertEquals(e, a.getEstrella());
    }
 
    @Test
