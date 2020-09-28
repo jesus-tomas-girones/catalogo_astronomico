@@ -78,10 +78,11 @@ Galaxia galaxia;
 * `Galaxia`, sin atributos adicionales.
 * Añade los métodos `toString()` para que se muestren de la siguiente forma:
 ```javascript
-objeto-Astro {nombre: tierra, tipo: PLANETA, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}
-objeto-Astro {nombre: Sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}
-objeto-Astro {nombre: Vía Lactea, tipo: GALAXIA, brillo: 0.0, distancia: 1275.0 }
+objeto-Astro {nombre: tierra, tipo: Planeta, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}
+objeto-Astro {nombre: Sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}
+objeto-Astro {nombre: Vía Lactea, tipo: Galaxia, brillo: 0.0, distancia: 1275.0 }
 ```
+Fíjate que la información del tipo se puede obtener directamente de la clase de objeto, no es un atributo. 
 
 2. Para verificar que las clases cumple los requisitos del ejercicio, abre la carpeta `catalogo / tests` en el navegador del proyecto y abre la clase `GalaxiaTest` , `EstrellaTest` y `PlanetaTest`. Quita los comentarios (/* ... */). Pulsa con el botón derecho sobre la clase y selecciona la opción `Run`.
 
@@ -126,7 +127,7 @@ Implementa la clase `EstrellaConTipo` que hereda de `Estrella` y añade un nuevo
 Implementa los métodos getters y setters y el método toString() para que muestre los datos como en este ejemplo:
 
 ```javascript
-objeto-Astro {nombre: sol, tipo: ESTRELLA, brillo: 4.0, distancia: 149.6, galaxia: vialactea, info: Enana Amarilla "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal"}
+objeto-Astro {nombre: sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, galaxia: vialactea, info: Enana Amarilla "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal"}
 ```
 
 Para verificar que la clase cumple los requisitos del ejercicio, utiliza los test definidos en `EstrellaConTipoTest`.
