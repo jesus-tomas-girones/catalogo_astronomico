@@ -38,7 +38,7 @@ public class GalaxiaTest {
    @Test
    public void toString_esCorrecto() {
       Galaxia a = new Galaxia("Andromeda", -1.42, 8.7);
-      assertEquals("objeto-Astro {nombre: Andromeda, brillo: -1.42, distancia: 8.7}", a.toString());
+      assertEquals("objeto-Astro {nombre: Andromeda, tipo: Galaxia, brillo: -1.42, distancia: 8.7}", a.toString());
    }
 
    @Test
