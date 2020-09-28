@@ -5,13 +5,12 @@ import java.util.Scanner;
 
 /**
  *
- * @author (IOT)
- * @version (2020)
+ * @author (iip)
+ * @version (2019)
  *
  */
 
 public class ProgramaCatalogo {
-    /**
 
     private static Astro leeAstro(Scanner teclado, CatalogoAstronomico ca) {
 
@@ -76,13 +75,13 @@ public class ProgramaCatalogo {
             Galaxia ga = (Galaxia) ca.buscaAstro(galaxia);
             if (ga != null){
                 if (tipo.equals("ea"))
-                    res = new Estrella(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.ENANA_AMARILLA);
+                    res = new EstrellaConTipo(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.ENANA_AMARILLA);
                 else if (tipo.equals("eb"))
-                    res = new Estrella(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.ENANA_BLANCA);
+                    res = new EstrellaConTipo(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.ENANA_BLANCA);
                 else if (tipo.equals("gr"))
-                    res = new Estrella(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.GIGANTE_ROJA);
+                    res = new EstrellaConTipo(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.GIGANTE_ROJA);
                 else if (tipo.equals("sb"))
-                    res = new Estrella(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.SUBGIGANTE_BLANCA);
+                    res = new EstrellaConTipo(nombre, brillo, distancia, numPlanetas, ga, TipoEstrella.SUBGIGANTE_BLANCA);
             }
             else {
                 System.out.println("La galaxia de esta estrella no existe en el catálogo. Debes crearla primero");
@@ -110,9 +109,9 @@ public class ProgramaCatalogo {
         ca.anade(vialactea);
         Astro andromeda = new Galaxia("andromeda", 0,2.4E13);
         ca.anade(andromeda);
-        Astro sol = new Estrella("sol", 4, 149.6, 8, (Galaxia) vialactea, TipoEstrella.ENANA_AMARILLA);
+        Astro sol = new EstrellaConTipo("sol", 4, 149.6, 8, (Galaxia) vialactea, TipoEstrella.ENANA_AMARILLA);
         ca.anade(sol);
-        Astro alpheratz = new Estrella("alpheratz", 7, 9.16E13, 100, (Galaxia) andromeda, TipoEstrella.SUBGIGANTE_BLANCA);
+        Astro alpheratz = new EstrellaConTipo("alpheratz", 7, 9.16E13, 100, (Galaxia) andromeda, TipoEstrella.SUBGIGANTE_BLANCA);
         ca.anade(alpheratz);
         Astro tierra = new Planeta("tierra", 0, 0, true, (Estrella) sol);
         ca.anade(tierra);
@@ -153,5 +152,4 @@ public class ProgramaCatalogo {
             respuesta = teclado.next().toLowerCase();
         };
     }
-     **/
 }
