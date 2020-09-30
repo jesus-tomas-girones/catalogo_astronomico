@@ -126,7 +126,7 @@ GIGANTE_ROJA("Gigante Roja", "https://es.wikipedia.org/wiki/Gigante_roja")
 SUBGIGANTE_BLANCO("Subgigante Blanco", "https://es.wikipedia.org/wiki/Subgigante")
 ```
 Implementa la clase `EstrellaConTipo` que hereda de `Estrella` y añade un nuevo atributo tipo que hace uso del enumerado `TipoEstrella` para determinar el tipo de estrella.
-Implementa los métodos getters y setters y el método toString() para que muestre los datos como en este ejemplo:
+Implementa los métodos `getters`, `setters`, `equals` y el método toString() para que muestre los datos como en este ejemplo:
 
 ```javascript
 objeto-Astro {nombre: sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, galaxia: vialactea, info: Enana Amarilla "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal"}
