@@ -1,10 +1,11 @@
 package com.example.catalogoastronomico;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.testng.annotations.Test;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 public class AstroTest {
-/*
+
    @Test
    public void crear_objeto_y_getters() {
       Astro a = new Astro("nombre", 1.1, 2.2 );
@@ -76,5 +77,5 @@ public class AstroTest {
       a.setBrillo(26);
       assertEquals("con grandes telescopios", a.visibleCon());
    }
-//*/
+
 }
