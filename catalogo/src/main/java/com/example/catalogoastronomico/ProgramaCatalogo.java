@@ -11,7 +11,6 @@ import java.util.Scanner;
  */
 
 public class ProgramaCatalogo {
-    /**
 
     private static Astro leeAstro(Scanner teclado, CatalogoAstronomico ca) {
 
@@ -121,7 +120,7 @@ public class ProgramaCatalogo {
         Astro exoplaneta = new Planeta("exoplaneta", 27, 2.537E16, false, (Estrella) alpheratz);
         ca.anade(exoplaneta);
 
-        System.out.println("CATÁLOGO:");
+        System.out.println("CATALOGO:");
         System.out.println("El catálogo tiene " + ca.getCatalogo().size() + " astros, que pertenecen a " + ca.getGalaxias().size() + " galaxia(s)");
         System.out.println(ca);
 
@@ -141,7 +140,7 @@ public class ProgramaCatalogo {
 
                 StringBuffer sb = new StringBuffer();
 
-                for (Astro a : ca.filtraEstrellasSimpleVista()) {
+                for (Astro a : ca.filtraAstrosSimpleVista()) {
                     sb.append(a.getNombre());
                     sb.append(" ");
                 }
@@ -153,5 +152,4 @@ public class ProgramaCatalogo {
             respuesta = teclado.next().toLowerCase();
         };
     }
-    **/
 }
