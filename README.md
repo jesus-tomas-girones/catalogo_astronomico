@@ -94,7 +94,7 @@ Fíjate que la información del tipo se puede obtener directamente de la clase d
 ```java
 Un ArrayList catalogo, que es una lista de los astros del catálogo.
 Un HashSet galaxias, que es un conjunto de String con los nombres de las galaxias a las que pertenecen los astros del catálogo. Cuando se añade una galaxia al catálogo, también se de incluir en este conjunto. 
-Un número entero numAstrosSimpleVista, que representa el número de astros a simple vista que contiene el catálogo (ver clase Astro).
+Un número entero numEstrellasSimpleVista, que representa el número de estrellas a simple vista que contiene el catálogo (ver clase Astro).
 ```
 La case CatalogoAstronomico debe implementar un interface llamado Astros que contiene los métodos que se indican a continuación.
 ```java
@@ -103,7 +103,7 @@ boolean anade(Astro a); //Añade un astro al catálogo y devuelve true si se ha 
 void borrar(String nombre); //Elimina el astro con el nombre indicado. 
 Astro buscaAstro(String nombre); //Busca un astro por su nombre
 Astro primeroMasBrillanteQue(Astro a); // Devuelve el primer Astro del catálogo que es más brillante en magnitud absoluta que un Astro dado (lo de primero puede tener varias interpretaciones)
-List<Astro> filtraAstrosSimpleVista(); //Devuelve un array de objetos Astro con las estrellas visibles a simple vista que contiene el catálogo (creo que se van a liar menos si usan una lista)
+List<Astro> filtraEstrellasSimpleVista(); //Devuelve un array de objetos Astro con las estrellas visibles a simple vista que contiene el catálogo (creo que se van a liar menos si usan una lista)
 Astro masBrillante (); //Devuelve el Astro que es más brillante en magnitud absoluta de todos los del catálogo
 ```
 
