@@ -76,7 +76,7 @@ int planetas;
 Galaxia galaxia;
 ```
 * `Galaxia`, sin atributos adicionales.
-* Añade los métodos `toString()` para que se muestren de la siguiente forma:
+* Añade los métodos `setters`, `getters`, `equals` y `toString()` para que se muestre la información de cada objeto de la siguiente forma:
 ```javascript
 objeto-Astro {nombre: tierra, tipo: Planeta, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}
 objeto-Astro {nombre: Sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}
