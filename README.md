@@ -84,6 +84,8 @@ objeto-Astro {nombre: Vía Lactea, tipo: Galaxia, brillo: 0.0, distancia: 1275.0
 ```
 Fíjate que la información del tipo se puede obtener directamente de la clase de objeto, no es un atributo. 
 
+NOTA: Debes tener en cuenta que al añadir una estrella, si su galaxia es conocida (no es null), debe añadirse también al catálogo y al conjunto de galaxias (a no ser que exista previamente). Igualmente, al añadir un planeta, si su estrella es conocida (no es null), debe añadirse también al catálogo (a no ser que exista previamente).
+
 2. Para verificar que las clases cumple los requisitos del ejercicio, abre la carpeta `catalogo / tests` en el navegador del proyecto y abre la clase `GalaxiaTest` , `EstrellaTest` y `PlanetaTest`. Quita los comentarios (/* ... */). Pulsa con el botón derecho sobre la clase y selecciona la opción `Run`.
 
 3. Verifica que pasan todos los tests. En caso que algún test falle, comprueba el problema y trata de solucionarlo.
