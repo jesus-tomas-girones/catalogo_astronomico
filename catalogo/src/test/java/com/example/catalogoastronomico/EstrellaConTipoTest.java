@@ -53,4 +53,31 @@ public class EstrellaConTipoTest {
          assertEquals("objeto-Astro {nombre: Alfa Centauri, tipo: EstrellaConTipo, brillo: -0.27, distancia: 4.5, planetas: 3, galaxia: Vía Láctea, info: Enana Blanca \"https://es.wikipedia.org/wiki/Enana_blanca\"}", a.toString());
       }
 
+    @Test
+    public void anade_astro_simple_vista() {
+        CatalogoAstronomico c = new CatalogoAstronomico();
+        Galaxia g = new Galaxia("galaxia", 0, 2.2);
+        Estrella e = new EstrellaConTipo("estrella", 4, 2.2, 3, g, TipoEstrella.ENANA_AMARILLA);
+        c.anade(e);
+        assertEquals(2, c.getCatalogo().size());
+        assertEquals(1, c.getGalaxias().size());
+        assertEquals(true, c.getGalaxias().contains(g.getNombre()));
+        assertEquals(1, c.filtraEstrellasSimpleVista().size());
+        assertEquals(1, c.getNumEstrellasSimpleVista());
+    }
+
+    @Test
+    public void borrar_astro_simple_vista() {
+        CatalogoAstronomico c = new CatalogoAstronomico();
+        Galaxia g = new Galaxia("galaxia", 0, 2.2);
+        Estrella e = new EstrellaConTipo("estrella", 4, 2.2, 3, g, TipoEstrella.ENANA_BLANCA);
+        c.anade(e);
+        c.borrar("estrella");
+        assertEquals(false, c.getCatalogo().isEmpty());
+        assertEquals(false, c.getGalaxias().isEmpty());
+        assertEquals(0, c.filtraEstrellasSimpleVista().size());
+        assertEquals(0, c.getNumEstrellasSimpleVista());
+        assertEquals(true, c.getGalaxias().contains(g.getNombre()));
+    }
+
 }
