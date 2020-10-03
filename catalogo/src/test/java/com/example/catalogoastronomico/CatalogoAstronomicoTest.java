@@ -21,6 +21,7 @@ public class CatalogoAstronomicoTest {
       CatalogoAstronomico c = new CatalogoAstronomico();
       Galaxia g = new Galaxia("galaxia", 0, 2.2);
       Estrella e = new Estrella("estrella", 4, 2.2, 3, g);
+      c.anade(g);
       c.anade(e);
       assertEquals(2, c.getCatalogo().size());
       assertEquals(1, c.getGalaxias().size());
@@ -34,6 +35,7 @@ public class CatalogoAstronomicoTest {
       CatalogoAstronomico c = new CatalogoAstronomico();
       Galaxia g = new Galaxia("galaxia", 0, 2.2);
       Estrella e = new Estrella("estrella", 6, 2.2, 3, g);
+      c.anade(g);
       c.anade(e);
       assertEquals(2, c.getCatalogo().size());
       assertEquals(1, c.getGalaxias().size());
@@ -49,7 +51,7 @@ public class CatalogoAstronomicoTest {
       Galaxia g2 = new Galaxia("galaxia", 1, 3.2);
       c.anade(g);
       c.anade(g2);
-      assertEquals(1, c.getCatalogo().size());
+      assertEquals(2, c.getCatalogo().size());
       assertEquals(1, c.getGalaxias().size());
       assertEquals(true, c.getGalaxias().contains(g.getNombre()));
       assertEquals(true, c.getGalaxias().contains(g2.getNombre()));
@@ -60,6 +62,7 @@ public class CatalogoAstronomicoTest {
       CatalogoAstronomico c = new CatalogoAstronomico();
       Galaxia g = new Galaxia("galaxia", 0, 2.2);
       Estrella e = new Estrella("estrella", 4, 2.2, 3, g);
+      c.anade(g);
       c.anade(e);
       c.borrar("estrella");
       assertEquals(false, c.getCatalogo().isEmpty());
