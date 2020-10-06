@@ -140,7 +140,7 @@ public class ProgramaCatalogo {
 
                 StringBuffer sb = new StringBuffer();
 
-                for (Astro a : ca.filtraAstrosSimpleVista()) {
+                for (Astro a : ca.filtraEstrellasSimpleVista()) {
                     sb.append(a.getNombre());
                     sb.append(" ");
                 }
