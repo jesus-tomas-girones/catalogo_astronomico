@@ -112,7 +112,7 @@ Astro masBrillante (); //Devuelve el Astro que es más brillante en magnitud abs
 Además, debe incluir un método toString() que devuelva un string que muestre la lista de astros que contiene, mostrando uno por línea. Por ejemplo:
 ```javascript
 objeto-Astro {nombre: tierra, tipo: Planeta, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}
-objeto-Astro {nombre: Sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}
+objeto-Astro {nombre: Sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, planetas: 3, galaxia: Vía Lactea}
 objeto-Astro {nombre: Vía Lactea, tipo: Galaxia, brillo: 0.0, distancia: 1275.0 }
 ```
 
