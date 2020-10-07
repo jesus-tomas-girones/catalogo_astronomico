@@ -79,7 +79,7 @@ Galaxia galaxia;
 * Añade los métodos `setters`, `getters`, `equals` y `toString()` para que se muestre la información de cada objeto de la siguiente forma:
 ```javascript
 objeto-Astro {nombre: tierra, tipo: Planeta, brillo: 0.0, distancia: 0.0, habitado: true, estrella: Sol}
-objeto-Astro {nombre: Sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, galaxia: Vía Lactea}
+objeto-Astro {nombre: Sol, tipo: Estrella, brillo: 4.0, distancia: 149.6, planetas: 3, galaxia: Vía Lactea}
 objeto-Astro {nombre: Vía Lactea, tipo: Galaxia, brillo: 0.0, distancia: 1275.0 }
 ```
 Fíjate que la información del tipo se puede obtener directamente de la clase de objeto, no es un atributo. 
