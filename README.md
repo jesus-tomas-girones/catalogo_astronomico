@@ -125,7 +125,7 @@ Implementar la clase `TipoEstrella`  como un enumerado que contenga los siguient
 ENANA_AMARILLA("Enana Amarilla", "https://es.wikipedia.org/wiki/Estrella_de_tipo-G_de_la_secuencia_principal")
 ENANA_BLANCA("Enana Blanca", "https://es.wikipedia.org/wiki/Enana_blanca")
 GIGANTE_ROJA("Gigante Roja", "https://es.wikipedia.org/wiki/Gigante_roja")
-SUBGIGANTE_BLANCO("Subgigante Blanco", "https://es.wikipedia.org/wiki/Subgigante")
+SUBGIGANTE_BLANCA("Subgigante Blanca", "https://es.wikipedia.org/wiki/Subgigante")
 ```
 Implementa la clase `EstrellaConTipo` que hereda de `Estrella` y añade un nuevo atributo tipo que hace uso del enumerado `TipoEstrella` para determinar el tipo de estrella.
 Implementa los métodos `getters`, `setters`, `equals` y el método toString() para que muestre los datos como en este ejemplo:
