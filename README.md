@@ -144,6 +144,12 @@ Para verificar que la clase cumple los requisitos del ejercicio, utiliza los tes
 ```
 * Te indicará que ya está en GitHub. No obtante queremos subirlo a nuestro propio repositorio. Haz click en `Share Anyway`
 * Parca la opción `Private` y pulsa el botón `Share`.
+
+* Cada vez que hagas un cambio haz un Commit and Push con tus cambios:
+  * Pulsa el icon con el visto bueno "Commit"
+  * En Commit Message introduce "Resultado de la práctica"
+  * Selecciona en el botón "Commit" la opción "Commit and Push"
+  
 * Comparte el proyecto con la cuenta de github del profesor:
   * Desde GitHub en el navegador, ve al proyecto.
   * Haz click en la opción de `Settings` arriba a la derecha.
