@@ -56,9 +56,9 @@ Para comprobar si dos objetos `Astro` son iguales. Dos astros son iguales si tod
 
 3. Para ejecutar la clase `Principal` seleccionala con el botón derecho en el explorador del proyecto y selecciona la opción `Run`.
 
-4. Para verificar que la clase `Astro` cumple los requisitos del ejercicio, abre la carpeta `catalogo / tests` en el navegador del proyecto y abre la clase `AstroTest`. Quita los comentarios (/* ... */). Pulsa con el botón derecho sobre la clase `AstroTest` y selecciona la opción `Run`.
+4. Para verificar que la clase `Astro` cumple los requisitos del ejercicio, abre la carpeta `catalogo / tests` en el navegador del proyecto y abre la clase `AstroTest`. Quita los comentarios (/* ... */). Pulsa con el botón derecho sobre la clase `AstroTest` y selecciona la opción `Run`. 
 
-5. Verifica que pasan todos los tests. En caso que algún test falle, comprueba el problema y trata de solucionarlo.
+5. Verifica que pasan todos los tests. En caso que algún test falle, comprueba el problema y trata de solucionarlo. NOTA: Nunca has de modificar los test. Para conseguir que estos pasen has de corregir tu código.
 
 ## Ejercicio 2 “Clases Planeta, Estrella y Galaxia” 
 
@@ -145,9 +145,9 @@ Para verificar que la clase cumple los requisitos del ejercicio, utiliza los tes
 * Te indicará que ya está en GitHub. No obtante queremos subirlo a nuestro propio repositorio. Haz click en `Share Anyway`
 * Parca la opción `Private` y pulsa el botón `Share`.
 
-* Cada vez que hagas un cambio haz un Commit and Push con tus cambios:
+* Para subir tus cambios haz un Commit and Push con tus cambios:
   * Pulsa el icon con el visto bueno "Commit"
-  * En Commit Message introduce "Resultado de la práctica"
+  * En Commit Message introduce "Práctica"
   * Selecciona en el botón "Commit" la opción "Commit and Push"
   
 * Comparte el proyecto con la cuenta de github del profesor:
